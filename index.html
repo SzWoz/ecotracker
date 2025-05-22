@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTracker – Jakość Powietrza</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192" />
+</head>
+<body>
+  <header>
+    <h1>EcoTracker</h1>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="activity.html">Dodaj aktywność</a>
+      <a href="history.html">Historia</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="air-info">
+      <h2>Aktualna jakość powietrza</h2>
+      <p><strong>Miasto:</strong> <span id="city">Gliwice</span></p>
+      <p><strong>PM2.5:</strong> <span id="pm25">–</span></p>
+      <p><strong>PM10:</strong> <span id="pm10">–</span></p>
+      <p><strong>Rekomendacja:</strong> <span id="recommendation">–</span></p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
