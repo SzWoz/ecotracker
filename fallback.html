@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoTracker – Offline</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Jesteś offline</h1>
+  </header>
+  <main>
+    <p>Brak połączenia z internetem. Niektóre funkcje mogą nie działać.</p>
+    <a href="index.html">Wróć do strony głównej</a>
+  </main>
+</body>
+  <script>
+    if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
+  </script>
+</html>

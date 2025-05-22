@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTracker – Dodaj aktywność</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Dodaj aktywność</h1>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="activity.html">Dodaj aktywność</a>
+      <a href="history.html">Historia</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="activity-form">
+      <label for="type">Rodzaj aktywności:</label>
+      <select id="type" required>
+        <option value="">-- wybierz --</option>
+        <option value="spacer">Spacer</option>
+        <option value="rower">Rower</option>
+        <option value="bieganie">Bieganie</option>
+        <option value="inne">Inne</option>
+      </select>
+
+      <label for="duration">Czas trwania (min):</label>
+      <input type="number" id="duration" min="1" required />
+
+      <button type="submit">Zapisz</button>
+    </form>
+
+    <p id="message"></p>
+  </main>
+
+<script type="module" src="js/activity.js"></script>
+
+    <script>
+    if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
+  </script>
+</body>
+</html>
