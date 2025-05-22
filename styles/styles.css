@@ -14,10 +14,24 @@ header {
   text-align: center;
 }
 
+header img{
+  width: 250px;
+  vertical-align: middle;
+  margin-bottom: 3rem;
+}
+
 nav a {
   margin: 0 0.5rem;
   color: white;
   text-decoration: none;
+}
+
+nav a img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: .5rem;
+  margin-bottom: 3px;
 }
 
 main {
